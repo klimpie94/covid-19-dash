@@ -131,3 +131,5 @@ dmypy.json
 # local dev files
 data.txt
 geo-metadata.geojson
+snippets.py
+data.db

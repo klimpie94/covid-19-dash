@@ -1,0 +1,53 @@
+.left-col {
+    margin-left: 0.5em;
+}
+
+.visualization-section {
+    margin-right: 0.5em;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    padding-left: 0.5rem;
+    text-align: center;
+}
+
+h2 {
+    /* color: white;
+    background-color: #999999; */
+    margin-bottom: 0em;
+    text-align: center;
+}
+
+.app-dropdown-menu {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.card-deck {
+    /* background-color: #999999; */
+    margin-top: 0em;
+    width: 200%;
+    padding: 5em;
+}
+
+.card {
+    padding: 10px;
+    width: 400px;
+    /* background-color: yellow; */
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 7.5px;
+  }
