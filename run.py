@@ -1,8 +1,8 @@
-from server import init_app
-from models.covid import CovidCases, PopulationModel
+from app.server import create_app
+from app.models.covid import CovidCases, PopulationModel
 
 
-app = init_app()
+app = create_app()
 
 @app.before_first_request
 def create_tables():

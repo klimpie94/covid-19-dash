@@ -1,6 +1,6 @@
 from flask import request
 from flask_restful import Resource, reqparse
-from models.covid import CovidCases
+from app.models.covid import CovidCases
 from datetime import datetime
 
 
