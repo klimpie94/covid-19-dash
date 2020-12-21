@@ -7,8 +7,8 @@ A working (WIP) personal project that integrates Dash into Flask and is able to 
 docker-compose build
 docker-compose up
 ```
-If you would like to have the latest data (current data is from 27th February until 21st December 2020), then you need to the delete the file data.db. In this case, the app will fetch and ingest the latest data from RIVM.nl
-into a local sqlite3 database. This happens automatically before the first request, however this also means that you have to wait for a few minutes
+If you would like to have the latest data (current data is from 27th February until 21st December 2020), then you'll have to delete the file ```data.db```. In this case, the app will fetch and ingest the latest data from ```RIVM.nl```
+into a local sqlite3 database. This happens ```automatically before the first request```, however this also means that you have to wait for a few minutes
 (approx. 6 minutes) before the app has started.
 
 ## Description of this project
