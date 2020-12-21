@@ -1,12 +1,15 @@
 import os
 import math
 import json
+import logging
 import pandas as pd
 
 from db import db
 from scraper import get_init_data
 from datetime import datetime
 from sqlalchemy import func
+
+logger = logging.getLogger("app.model")
 
 
 class CovidCases(db.Model):
@@ -106,8 +109,9 @@ class CovidCases(db.Model):
             try:
                 row.save_to_db()
             except Exception as e:
-                print("An exception has occured:", e)
+                logger.critical("An exception has occured:", e)
                 return {"Message": "An error occured while inserting the record"}
+            logger.info("All records have been succesfully created!")
         return {"Message": "All records have been succesfully created!"}
 
     def json(self):
@@ -178,7 +182,7 @@ class PopulationModel(db.Model):
         if PopulationModel.query.count() >= 1:
             return None
         dirname = os.path.abspath(os.path.join(os.path.dirname(__file__),".."))
-        filename = os.path.join(dirname, 'population_data.csv')
+        filename = os.path.join(dirname, 'data/population_data.csv')
         df = pd.read_csv(filename)
 
         for _, row in df.iterrows():
