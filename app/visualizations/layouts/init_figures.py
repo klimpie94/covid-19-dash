@@ -6,7 +6,7 @@ import dash_bootstrap_components as dbc
 
 from datetime import datetime, timedelta
 
-from models.covid import CovidCases
+from app.models.covid import CovidCases
 
 def create_daily_graph():
     start_datetime_obj = datetime.strptime("2020-02-27", "%Y-%m-%d")

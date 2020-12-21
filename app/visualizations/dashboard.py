@@ -8,9 +8,9 @@ from dash import Dash
 from dash.dependencies import Input, Output, State
 from datetime import datetime, timedelta
 
-from db import db
-from visualizations.layouts import init_figures, menu, filters
-from models.covid import CovidCases, PopulationModel
+from app.db import db
+from app.visualizations.layouts import init_figures, menu, filters
+from app.models.covid import CovidCases, PopulationModel
 
 def init_dashboard(server):
     dash_app = Dash(__name__, server=server, 

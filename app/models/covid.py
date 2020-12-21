@@ -4,8 +4,8 @@ import json
 import logging
 import pandas as pd
 
-from db import db
-from scraper import get_init_data
+from app.db import db
+from app.scraper import get_init_data
 from datetime import datetime
 from sqlalchemy import func
 
